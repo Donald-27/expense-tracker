@@ -15,16 +15,48 @@ const ExpenseEntryForm = ({ onAddTransaction }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddTransaction({ ...formData, amount: parseFloat(formData.amount) });
-    setFormData({ date: '', description: '', amount: '', category: '' });
-  };
+  
+    onAddTransaction(formData);
+  
+    setFormData({
+      date: '',
+      description: '',
+      amount: '',
+      category: '',
+    });    };
 
+  
   return (
     <form onSubmit={handleSubmit} className="expense-form">
-      <input name="date" type="date" value={formData.date} onChange={handleChange} required />
-      <input name="description" placeholder="Description" value={formData.description} onChange={handleChange} required />
-      <input name="amount" type="number" placeholder="Amount" value={formData.amount} onChange={handleChange} required />
-      <input name="category" placeholder="Category" value={formData.category} onChange={handleChange} required />
+      <input
+        name="date"
+        type="date"
+        value={formData.date}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="description"
+        placeholder="Description"
+        value={formData.description}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="amount"
+        type="number"
+        placeholder="Amount"
+        value={formData.amount}
+        onChange={handleChange}
+        required
+      />
+      <input
+        name="category"
+        placeholder="Category"
+        value={formData.category}
+        onChange={handleChange}
+        required
+      />
       <button type="submit">Add</button>
     </form>
   );

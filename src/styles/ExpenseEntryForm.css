@@ -6,6 +6,7 @@
     margin: 20px auto;
     padding: 20px;
     background-color: transparent;
+    margin-bottom: 32px;
   }
   
   .expense-form input,
