@@ -31,7 +31,7 @@ const App = () => {
       .catch((err) => console.error('Failed to add transaction:', err));
   };
 
-  // Filter transactions based on search term
+  // Filter transactions based on searched term
   const filteredTransactions = transactions.filter((t) =>
     t.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
