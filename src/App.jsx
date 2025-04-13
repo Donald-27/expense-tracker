@@ -17,7 +17,7 @@ const App = () => {
       .catch((err) => console.error('Failed to fetch:', err));
   }, []);
 
-  // Add a new transaction (POST to json-server)
+  // Add a new transaction/POST to json-server)
   const handleAddTransaction = (newTransaction) => {
     fetch('http://localhost:3001/transactions', {
       method: 'POST',
