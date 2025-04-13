@@ -1,13 +1,11 @@
 .expense-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 300px;
+    gap: 24px;
+    width: 500px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fafafa;
+    background-color: transparent;
   }
   
   .expense-form input,
@@ -22,14 +20,15 @@
   }
   
   .expense-form button {
-    background-color: #4CAF50;
+    background-color: #046a08;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-style: italic;
   }
   
   .expense-form button:hover {
-    background-color: #45a049;
+    background-color: #21f528;
   }
   

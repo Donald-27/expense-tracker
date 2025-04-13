@@ -1,11 +1,33 @@
-/* src/styles/index.css */
+
 body {
+  background: linear-gradient(135deg, black, purple, black, #1e90ff); 
+  height: 100vh; 
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1549887534-1722b5b6e6b1?auto=format&fit=crop&w=1950&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: antiquewhite;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px black;
+  font-size: 50px;
+  word-spacing: 7px;
+}
+
+.app-container {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.app-container h1 span {
+  color: green;
+  font-style: italic;
 }

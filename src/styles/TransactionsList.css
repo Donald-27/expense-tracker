@@ -5,21 +5,21 @@
   }
   
   .transactions-table th, .transactions-table td {
-    border: 1px solid #ddd;
+    border: 0.1px solid green;
     padding: 8px;
     text-align: left;
+    color: aliceblue;
   }
   
   .transactions-table th {
-    background-color: #f4f4f4;
+    background-color: gray;
     font-weight: bold;
+    border: 0.2px solid blue;
   }
   
-  .transactions-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+ 
   
   .transactions-table tr:hover {
-    background-color: #f1f1f1;
+    background-color: green;
   }
   

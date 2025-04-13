@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>Expense Tracker</h1>
+      <h1> <span>Exp</span>ense <span>Tra</span>cker</h1>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <ExpenseEntryForm onAddTransaction={handleAddTransaction} />
       <TransactionsList transactions={filteredTransactions} />
