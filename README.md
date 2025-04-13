@@ -1,7 +1,16 @@
 Expense Tracker
+
+
+
+
 A simple yet powerful expense tracker built with React, designed to help you stay on top of your finances. Quickly add, search, and view your daily spending through a clean and frendly interface.
 
+
+
+
  Track your money with ease — because every coin matters.
+
+
 
    Features
  Add Expenses – Log transactions with date, amount, category, and description
