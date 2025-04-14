@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import ExpenseEntryForm from './components/ExpenseEntryForm';
 import TransactionsList from './components/TransactionsList';
@@ -9,7 +8,7 @@ const App = () => {
   const [transactions, setTransactions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Fetch transactions from json-server on load
+    // Fetch transactions from json-server
   useEffect(() => {
     fetch('http://localhost:3001/transactions')
       .then((res) => res.json())
@@ -17,7 +16,7 @@ const App = () => {
       .catch((err) => console.error('Failed to fetch:', err));
   }, []);
 
-  // Add a new transaction/POST to json-server)
+   // Add a new transaction to json-server)
   const handleAddTransaction = (newTransaction) => {
     fetch('http://localhost:3001/transactions', {
       method: 'POST',
@@ -31,11 +30,10 @@ const App = () => {
       .catch((err) => console.error('Failed to add transaction:', err));
   };
 
-  // Filter transactions based on searched term
+    // Filter transactions based on searched term
   const filteredTransactions = transactions.filter((t) =>
     t.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
   return (
     <div className="app-container">
       <h1><span>Exp</span>ense <span>Tra</span>cker</h1>
@@ -43,7 +41,7 @@ const App = () => {
       <ExpenseEntryForm onAddTransaction={handleAddTransaction} />
       <TransactionsList transactions={filteredTransactions} />
     </div>
-  );
-};
+  ); };
+
 
 export default App;
