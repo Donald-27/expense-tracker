@@ -30,6 +30,7 @@ Styling: CSS Modules
 
 Data: Local,  under data.js
 
+JSON as the mock backend
 
  Installation
 
@@ -45,6 +46,10 @@ npm install
   4. Start the development server
 npm run dev
 Visit http://localhost:5173 in your browser.
+
+  5. Run the JSON server
+      npx json-server --watch db.json --port 3001
+   To watch the iles and update in real time
 
   Usage
 Fill in the form with the transaction's date, description, amount, and category to add an expense.
